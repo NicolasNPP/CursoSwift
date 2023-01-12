@@ -24,6 +24,7 @@
 		CE65C8DA2970470700A4AEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE65C8DD2970470700A4AEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE65C8DF2970470700A4AEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE65C8E52970475E00A4AEF5 /* SeccionesDelCursoConPlaygrounds.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SeccionesDelCursoConPlaygrounds.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		CE65C8D02970470500A4AEF5 /* CursoIos */ = {
 			isa = PBXGroup;
 			children = (
+				CE65C8E6297059C400A4AEF5 /* Playgrounds */,
 				CE65C8D12970470500A4AEF5 /* AppDelegate.swift */,
 				CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */,
 				CE65C8D52970470500A4AEF5 /* ViewController.swift */,
@@ -65,6 +67,14 @@
 				CE65C8DF2970470700A4AEF5 /* Info.plist */,
 			);
 			path = CursoIos;
+			sourceTree = "<group>";
+		};
+		CE65C8E6297059C400A4AEF5 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				CE65C8E52970475E00A4AEF5 /* SeccionesDelCursoConPlaygrounds.playground */,
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
