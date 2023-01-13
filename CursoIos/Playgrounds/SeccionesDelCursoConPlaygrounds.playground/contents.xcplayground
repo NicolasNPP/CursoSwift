@@ -3,5 +3,6 @@
     <pages>
         <page name='SeccionUnoDosYTres'/>
         <page name='SeccionCuatro'/>
+        <page name='SeccionCinco'/>
     </pages>
 </playground>
