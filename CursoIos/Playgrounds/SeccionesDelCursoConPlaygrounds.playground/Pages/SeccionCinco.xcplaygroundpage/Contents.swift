@@ -169,3 +169,86 @@ var subSetArray5 = exampleArray[5...9]
 var closedRange = [2...4]
 var subArray = Array(closedRange[0])
 subArray[2]
+
+//--Operadores--
+
+var x = 1
+var y = 2
+
+//Igual a
+
+print(x == y)
+
+//Diferente a
+
+print(x != y)
+
+//Menor que, Mayor que, Menor o igual que, Mayor o igual que
+
+print(x<y)
+print(x>y)
+print(x<=y)
+print(x>=y)
+
+//--Estructuras de control--
+
+// If
+
+var age = 25
+var money = 15000
+var genreF = true
+
+if (age >= 22 || money > 12000) && genreF{
+    print("Ingreso")
+} else {
+    print("No ingreso")
+}
+
+// Switch
+
+let country = "EEUU"
+let age2 = 28
+
+switch country {
+case "ES":
+    print("Idioma español")
+case "MX":
+    print("Idioma español")
+case "AR":
+    print("Idioma español")
+case "EEUU":
+    print("Idioma ingles")
+default:
+    print("Idioma sin asignar")
+}
+
+switch age2{
+case 0,1,2:
+    print("Sos un bebe")
+case 3...18:
+    print("No puedes ingresar a la discotecta")
+case 18..<100:
+    print("Puedes ingresar")
+default:
+    print("😡 Ingresa bien tus datos")
+}
+
+enum YourData {
+    case name
+    case surname
+    case address
+    case phone
+}
+
+let data: YourData = .name
+
+switch data {
+case .name:
+    print("Estamos editando el nombre")
+case .surname:
+    print("Estamos editando el apellido")
+case .address:
+    print("Estamos editando la dirección")
+case .phone:
+    print("Estamos editando el teléfono")
+}
