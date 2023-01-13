@@ -40,5 +40,3 @@ var addCast = Double(x) + y
 var w: Double = 2.2
 var z: Int = 2
 var text: String = "Asignación explicita"
-
-

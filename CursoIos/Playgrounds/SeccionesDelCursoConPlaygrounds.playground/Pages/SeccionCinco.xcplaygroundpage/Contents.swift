@@ -87,3 +87,62 @@ var personNamedTuples = (name: "Nicolas",surname: "Pepe",date: 28, hight: 1.86)
 print(personNamedTuples.name)
 
 //--Enums--
+
+enum PersonalData{
+    case name
+    case surname
+    case address
+    case phone
+}
+
+var currentData: PersonalData = .name
+var input = "Nicolás"
+
+currentData = .phone
+input = "111212112"
+
+// Enums con valores asociados
+
+enum ComplexPersonalData{
+    case name(String)
+    case surname(String, String)
+    case address(String, Int)
+    case phone(Int)
+}
+
+var complexCurrentData: ComplexPersonalData = .name("Nicolás")
+
+complexCurrentData = .address("Calle Test", 5)
+
+// Enums con el mismo valor
+
+enum RawPersonalData: String {
+    case name
+    case surname
+    case address
+    case phone
+}
+
+RawPersonalData.name.rawValue
+
+//--Operadores de rango--
+
+var exampleArray = [0,1,2,3,4,5,6,7,8,9]
+
+//Operador de rango doble lado
+
+var subSetArray = exampleArray[1...3]
+var subSetArray2 = exampleArray[1..<5]
+
+//Operador de rango lado único
+
+var subSetArray3 = exampleArray[...3]
+var subSetArray4 = exampleArray[5...]
+
+//Operador de rango cerrado
+
+var subSetArray5 = exampleArray[5...9]
+ 
+var closedRange = [2...4]
+var subArray = Array(closedRange[0])
+subArray[2]
