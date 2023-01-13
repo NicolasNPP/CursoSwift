@@ -1,3 +1,15 @@
+/*
+ En esta hoja de playground se encuentra todo lo relacionado a la seccion 4 del curso de Swift.
+  -Seccion 4
+    -Caracteres y Cadenas (Strings) Desde Cero
+    -Tipo de dato String
+    -Tipo de dato Character
+    -Unicode y Emojis
+    -Concatenación e interpolación de Strings
+    -Comparación y otras operaciones
+    -Playground Caracteres y Cadenas
+*/
+
 import Foundation
 
 //--Strings--

@@ -1,4 +1,27 @@
- import Foundation
+/*
+ En esta hoja de playground se encuentra todo lo relacionado a la seccion 5 del curso de Swift.
+  -Seccion 5
+    -Boleanos y valores lógicos
+    -Colecciones Desde Cero
+    -Arreglos : Declaración, Acceso, Añadir, Reemplazar y Borras Datos
+    -Diccionarios
+    -Tuplas
+    -Enums
+    -Range operator
+    -Estructuras de control desde 0
+    -Operadores en Swift desde 0
+    -Operadores lógicos desde 0
+    -If - else
+    -Condicionales anidadas
+    -Switch
+    -Estructuras repetitivad
+    -Bucles o Ciclos desde Cero
+    -Bucle o ciclo for in
+    -Bucle o ciclo while
+    -Bucle o ciclo repeat while.
+*/
+
+import Foundation
 
 //--Boleanos--
 

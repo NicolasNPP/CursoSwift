@@ -1,3 +1,20 @@
+/*
+ En esta hoja de playground se encuentra todo lo relacionado a las secciones 1, 2 y 3 del curso de Swift.
+  -Sección 1
+    -Introducción
+  -Sección 2
+    -Xcode
+    -Playgrounds
+  -Sección 3
+    -Bases de Swift
+    -Palabras reservadas
+    -Comentarios
+    -Constantes y variables
+    -Declaraciones Múltiples
+    -Tipos de datos comunes desde 0
+    -Asignación implícita y explicita
+*/
+
 import Foundation
 
 //--Constantes y variables--
