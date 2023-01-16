@@ -252,3 +252,41 @@ case .address:
 case .phone:
     print("Estamos editando el teléfono")
 }
+
+//--Ciclos--
+
+//For in
+
+var count = 0
+
+for numero in 1...4 {
+    count = count+1
+    print(numero)
+}
+
+var countrys = ["MX": "Mexico","EUA": "Estados Unidos","JP": "Japon"]
+
+for (country, name) in countrys {
+    print("\(country) -- \(name)")
+}
+
+//While
+
+var age1 = 20
+
+while age1 < 30 {
+    age1 += 1
+    print("No puedes ingresar")
+}
+
+//Repeat while
+
+var number: Int
+var n = 0
+
+repeat{
+    n += 1
+    number = Int(arc4random_uniform(10))
+    
+    print("El ciclo lleva \(n) cantidad de repeticiones")
+} while(number != 8)
