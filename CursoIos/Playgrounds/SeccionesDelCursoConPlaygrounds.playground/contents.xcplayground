@@ -6,5 +6,6 @@
         <page name='SeccionCinco'/>
         <page name='SeccionSeis'/>
         <page name='SeccionSiete'/>
+        <page name='SeccionOcho'/>
     </pages>
 </playground>
