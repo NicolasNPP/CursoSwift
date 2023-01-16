@@ -1,5 +1,5 @@
 /*
- En esta hoja de playground se encuentra todo lo relacionado a la seccion 5 del curso de Swift.
+ En esta hoja de playground se encuentra todo lo relacionado a la seccion 6 del curso de Swift.
   -Seccion 6
     -Funciones
     -Funciones sin parámetro
