@@ -33,18 +33,31 @@
                                     <action selector="myPickerViewAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pUz-q9-IBn"/>
                                 </connections>
                             </pageControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zXr-sa-RcL">
+                                <rect key="frame" x="62" y="530" width="306" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mySegmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="cz0-QC-i3J"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zXr-sa-RcL" secondAttribute="trailing" constant="62" id="2PA-LU-59T"/>
                             <constraint firstItem="fe7-CO-2ym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="7E7-6s-exT"/>
                             <constraint firstItem="MBB-pM-kWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="7zz-NB-6XV"/>
+                            <constraint firstItem="zXr-sa-RcL" firstAttribute="top" secondItem="fe7-CO-2ym" secondAttribute="bottom" constant="51" id="IKh-o0-hu4"/>
                             <constraint firstItem="6Vt-gh-mEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Usl-zs-hIc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MBB-pM-kWw" secondAttribute="bottom" constant="70" id="dHr-3Y-1zw"/>
                             <constraint firstItem="6Vt-gh-mEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f2J-8a-tef"/>
                             <constraint firstItem="fe7-CO-2ym" firstAttribute="top" secondItem="6Vt-gh-mEF" secondAttribute="bottom" constant="112" id="fRg-j5-gjT"/>
                             <constraint firstItem="6Vt-gh-mEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="nqH-AQ-E2P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fe7-CO-2ym" secondAttribute="trailing" constant="99" id="tpn-ex-a8t"/>
+                            <constraint firstItem="zXr-sa-RcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="wp2-MI-N6r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MBB-pM-kWw" secondAttribute="trailing" constant="120" id="wqm-tm-hHr"/>
                         </constraints>
                     </view>
@@ -52,6 +65,7 @@
                         <outlet property="buttonOne" destination="MBB-pM-kWw" id="hez-6Q-tyC"/>
                         <outlet property="myPageControl" destination="fe7-CO-2ym" id="Fg5-7H-UxO"/>
                         <outlet property="myPickerView" destination="6Vt-gh-mEF" id="Izx-ll-mwL"/>
+                        <outlet property="mySegmentedControls" destination="zXr-sa-RcL" id="K85-c3-q3A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

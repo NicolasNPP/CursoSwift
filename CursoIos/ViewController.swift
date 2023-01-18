@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
+    @IBOutlet weak var mySegmentedControls: UISegmentedControl!
     
     //Variables
     private let myPickerViewValues = ["Nicolás", "Alejandro", "Rosana", "Carlos", "Johan"]
@@ -29,6 +30,13 @@ class ViewController: UIViewController {
         myPageControl.numberOfPages = myPickerViewValues.count
         myPageControl.currentPageIndicatorTintColor = .blue
         myPageControl.pageIndicatorTintColor = .lightGray
+        
+        //Segmented Controls
+        mySegmentedControls.removeAllSegments()
+        for (index, value) in myPickerViewValues.enumerated() {
+            mySegmentedControls.insertSegment(withTitle: value, at: index, animated: true)
+        }
+        
     }
     
     @IBAction func buttonOne(_ sender: Any) {
@@ -38,7 +46,15 @@ class ViewController: UIViewController {
         myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
         let myString = myPickerViewValues[myPageControl.currentPage]
         buttonOne.setTitle(myString, for: .normal)
+        mySegmentedControls.selectedSegmentIndex = myPageControl.currentPage
     }
+    
+    @IBAction func mySegmentedControl(_ sender: Any) {
+        myPickerView.selectRow(mySegmentedControls.selectedSegmentIndex, inComponent: 0, animated: true)
+        
+        myPageControl.currentPage = mySegmentedControls.selectedSegmentIndex
+    }
+    
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
