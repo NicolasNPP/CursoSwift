@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControls: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var myStepper: UIStepper!
     
     //Variables
     private let myPickerViewValues = ["Nicolás", "Alejandro", "Rosana", "Carlos", "Johan"]
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         //Picker
         myPickerView.backgroundColor = .lightGray
         myPickerView.dataSource = self
@@ -42,6 +44,11 @@ class ViewController: UIViewController {
         mySlider.minimumTrackTintColor = .red
         mySlider.minimumValue = 1
         mySlider.maximumValue = Float(myPickerViewValues.count)
+        mySlider.value = 3
+      
+        //Stepper
+        myStepper.minimumValue = 1
+        myStepper.maximumValue = Double(myPickerViewValues.count)
     }
     
     @IBAction func buttonOne(_ sender: Any) {
@@ -61,20 +68,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mySliderAction(_ sender: Any) {
+
         switch mySlider.value {
         case 1..<2:
-            mySegmentedControls.selectedSegmentIndex = 1
+            mySegmentedControls.selectedSegmentIndex = 0
         case 2..<3:
-            mySegmentedControls.selectedSegmentIndex = 2
+            mySegmentedControls.selectedSegmentIndex = 1
         case 3..<4:
-            mySegmentedControls.selectedSegmentIndex = 3
+            mySegmentedControls.selectedSegmentIndex = 2
         case 4..<5:
-            mySegmentedControls.selectedSegmentIndex = 4
+            mySegmentedControls.selectedSegmentIndex = 3
         default:
-            mySegmentedControls.selectedSegmentIndex = 5
+            mySegmentedControls.selectedSegmentIndex = 4
         }
     }
-    
+ 
+    @IBAction func myStepperAction(_ sender: Any) {
+        let value = myStepper.value
+        mySlider.value = Float(value)
+    }
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
