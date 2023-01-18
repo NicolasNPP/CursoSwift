@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Hola mundo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z2-Ml-ldm">
-                                <rect key="frame" x="169" y="468" width="92" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBB-pM-kWw">
                                 <rect key="frame" x="124" y="793" width="186" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -30,20 +24,24 @@
                                     <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="odM-kw-TiS"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vt-gh-mEF">
+                                <rect key="frame" x="0.0" y="125" width="430" height="216"/>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MBB-pM-kWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="7zz-NB-6XV"/>
-                            <constraint firstItem="1Z2-Ml-ldm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="a9L-1p-hrO"/>
-                            <constraint firstItem="MBB-pM-kWw" firstAttribute="top" secondItem="1Z2-Ml-ldm" secondAttribute="bottom" constant="304" id="ks6-qi-IXs"/>
-                            <constraint firstItem="1Z2-Ml-ldm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="riv-Fb-Nng"/>
+                            <constraint firstItem="6Vt-gh-mEF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Usl-zs-hIc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MBB-pM-kWw" secondAttribute="bottom" constant="70" id="dHr-3Y-1zw"/>
+                            <constraint firstItem="6Vt-gh-mEF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f2J-8a-tef"/>
+                            <constraint firstItem="6Vt-gh-mEF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="nqH-AQ-E2P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MBB-pM-kWw" secondAttribute="trailing" constant="120" id="wqm-tm-hHr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonOne" destination="MBB-pM-kWw" id="hez-6Q-tyC"/>
-                        <outlet property="labelOne" destination="1Z2-Ml-ldm" id="Ad1-1P-Iwj"/>
+                        <outlet property="myPickerView" destination="6Vt-gh-mEF" id="Izx-ll-mwL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
