@@ -16,13 +16,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySegmentedControls: UISegmentedControl!
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
+    @IBOutlet weak var mySwitch: UISwitch!
     
     //Variables
     private let myPickerViewValues = ["Nicolás", "Alejandro", "Rosana", "Carlos", "Johan"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        myPickerView.isHidden = true
 
         //Picker
         myPickerView.backgroundColor = .lightGray
@@ -49,6 +50,11 @@ class ViewController: UIViewController {
         //Stepper
         myStepper.minimumValue = 1
         myStepper.maximumValue = Double(myPickerViewValues.count)
+        
+        //Switch
+        mySwitch.onTintColor = .purple
+        mySwitch.isOn = false
+        
     }
     
     @IBAction func buttonOne(_ sender: Any) {
@@ -87,6 +93,16 @@ class ViewController: UIViewController {
         let value = myStepper.value
         mySlider.value = Float(value)
     }
+    
+    @IBAction func mySwitchAction(_ sender: Any) {
+        if mySwitch.isOn {
+            myPickerView.isHidden = false
+        } else {
+            myPickerView.isHidden = true
+        }
+    }
+    
+    
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
