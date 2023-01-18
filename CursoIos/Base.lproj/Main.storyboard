@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBB-pM-kWw">
-                                <rect key="frame" x="167" y="793" width="96" height="34.666666666666629"/>
+                                <rect key="frame" x="124" y="793" width="186" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cambiar"/>
                                 <connections>
@@ -34,14 +34,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MBB-pM-kWw" secondAttribute="trailing" constant="167" id="7vo-Pf-7P4"/>
+                            <constraint firstItem="MBB-pM-kWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="124" id="7zz-NB-6XV"/>
                             <constraint firstItem="1Z2-Ml-ldm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="a9L-1p-hrO"/>
                             <constraint firstItem="MBB-pM-kWw" firstAttribute="top" secondItem="1Z2-Ml-ldm" secondAttribute="bottom" constant="304" id="ks6-qi-IXs"/>
-                            <constraint firstItem="MBB-pM-kWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="o7c-xY-4dN"/>
                             <constraint firstItem="1Z2-Ml-ldm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="riv-Fb-Nng"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MBB-pM-kWw" secondAttribute="trailing" constant="120" id="wqm-tm-hHr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonOne" destination="MBB-pM-kWw" id="hez-6Q-tyC"/>
                         <outlet property="labelOne" destination="1Z2-Ml-ldm" id="Ad1-1P-Iwj"/>
                     </connections>
                 </viewController>
