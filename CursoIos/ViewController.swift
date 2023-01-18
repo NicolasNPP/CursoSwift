@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControls: UISegmentedControl!
+    @IBOutlet weak var mySlider: UISlider!
     
     //Variables
     private let myPickerViewValues = ["Nicolás", "Alejandro", "Rosana", "Carlos", "Johan"]
@@ -37,6 +38,10 @@ class ViewController: UIViewController {
             mySegmentedControls.insertSegment(withTitle: value, at: index, animated: true)
         }
         
+        //Slider
+        mySlider.minimumTrackTintColor = .red
+        mySlider.minimumValue = 1
+        mySlider.maximumValue = Float(myPickerViewValues.count)
     }
     
     @IBAction func buttonOne(_ sender: Any) {
@@ -53,6 +58,21 @@ class ViewController: UIViewController {
         myPickerView.selectRow(mySegmentedControls.selectedSegmentIndex, inComponent: 0, animated: true)
         
         myPageControl.currentPage = mySegmentedControls.selectedSegmentIndex
+    }
+    
+    @IBAction func mySliderAction(_ sender: Any) {
+        switch mySlider.value {
+        case 1..<2:
+            mySegmentedControls.selectedSegmentIndex = 1
+        case 2..<3:
+            mySegmentedControls.selectedSegmentIndex = 2
+        case 3..<4:
+            mySegmentedControls.selectedSegmentIndex = 3
+        case 4..<5:
+            mySegmentedControls.selectedSegmentIndex = 4
+        default:
+            mySegmentedControls.selectedSegmentIndex = 5
+        }
     }
     
 }
