@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySlider: UISlider!
     @IBOutlet weak var myStepper: UIStepper!
     @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var myProgressView: UIProgressView!
+    
     
     //Variables
     private let myPickerViewValues = ["Nicolás", "Alejandro", "Rosana", "Carlos", "Johan"]
@@ -24,6 +27,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myPickerView.isHidden = true
+        
+        myActivityIndicator.color = .purple
+        myActivityIndicator.startAnimating()
 
         //Picker
         myPickerView.backgroundColor = .lightGray
@@ -45,7 +51,7 @@ class ViewController: UIViewController {
         mySlider.minimumTrackTintColor = .red
         mySlider.minimumValue = 1
         mySlider.maximumValue = Float(myPickerViewValues.count)
-        mySlider.value = 3
+        mySlider.value = 1
       
         //Stepper
         myStepper.minimumValue = 1
@@ -54,6 +60,9 @@ class ViewController: UIViewController {
         //Switch
         mySwitch.onTintColor = .purple
         mySwitch.isOn = false
+        
+        //Progress Indicators
+        myProgressView.progress = 0
         
     }
     
@@ -75,18 +84,27 @@ class ViewController: UIViewController {
     
     @IBAction func mySliderAction(_ sender: Any) {
 
+        var progress: Float = 0
+        
         switch mySlider.value {
         case 1..<2:
             mySegmentedControls.selectedSegmentIndex = 0
+            progress = 0.2
         case 2..<3:
             mySegmentedControls.selectedSegmentIndex = 1
+            progress = 0.4
         case 3..<4:
             mySegmentedControls.selectedSegmentIndex = 2
+            progress = 0.6
         case 4..<5:
             mySegmentedControls.selectedSegmentIndex = 3
+            progress = 0.8
         default:
             mySegmentedControls.selectedSegmentIndex = 4
+            progress = 1
         }
+        
+        myProgressView.progress = progress
     }
  
     @IBAction func myStepperAction(_ sender: Any) {
@@ -97,8 +115,12 @@ class ViewController: UIViewController {
     @IBAction func mySwitchAction(_ sender: Any) {
         if mySwitch.isOn {
             myPickerView.isHidden = false
+            myActivityIndicator.stopAnimating()
+            myActivityIndicator.isHidden = true
         } else {
             myPickerView.isHidden = true
+            myActivityIndicator.startAnimating()
+            myActivityIndicator.isHidden = false
         }
     }
     
