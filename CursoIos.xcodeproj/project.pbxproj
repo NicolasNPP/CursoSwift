@@ -13,6 +13,7 @@
 		CE65C8D92970470500A4AEF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE65C8D72970470500A4AEF5 /* Main.storyboard */; };
 		CE65C8DB2970470700A4AEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE65C8DA2970470700A4AEF5 /* Assets.xcassets */; };
 		CE65C8DE2970470700A4AEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE65C8DC2970470700A4AEF5 /* LaunchScreen.storyboard */; };
+		CEF728CF2979A13200D72869 /* Seccion13ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF728CE2979A13200D72869 /* Seccion13ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CE65C8DD2970470700A4AEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE65C8DF2970470700A4AEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE65C8E52970475E00A4AEF5 /* SeccionesDelCursoConPlaygrounds.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SeccionesDelCursoConPlaygrounds.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CEF728CE2979A13200D72869 /* Seccion13ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seccion13ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		CE65C8D02970470500A4AEF5 /* CursoIos */ = {
 			isa = PBXGroup;
 			children = (
+				CEF728CD2979A11F00D72869 /* Seccion13 */,
 				CE65C8E6297059C400A4AEF5 /* Playgrounds */,
 				CE65C8D12970470500A4AEF5 /* AppDelegate.swift */,
 				CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */,
@@ -75,6 +78,14 @@
 				CE65C8E52970475E00A4AEF5 /* SeccionesDelCursoConPlaygrounds.playground */,
 			);
 			path = Playgrounds;
+			sourceTree = "<group>";
+		};
+		CEF728CD2979A11F00D72869 /* Seccion13 */ = {
+			isa = PBXGroup;
+			children = (
+				CEF728CE2979A13200D72869 /* Seccion13ViewController.swift */,
+			);
+			path = Seccion13;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */,
 				CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */,
 				CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */,
+				CEF728CF2979A13200D72869 /* Seccion13ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
