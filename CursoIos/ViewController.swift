@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController {
     
     //Oulets
-    @IBOutlet weak var buttonOne: UIButton!
     @IBOutlet weak var myPickerView: UIPickerView!
     @IBOutlet weak var myPageControl: UIPageControl!
     @IBOutlet weak var mySegmentedControls: UISegmentedControl!
@@ -19,7 +18,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var myProgressView: UIProgressView!
-    
+    @IBOutlet weak var mySwitchLabel: UILabel!
+    @IBOutlet weak var myTextField: UITextField!
+    @IBOutlet weak var myButton: UIButton!
+    @IBOutlet weak var myTextView: UITextView!
     
     //Variables
     private let myPickerViewValues = ["Nicolás", "Alejandro", "Rosana", "Carlos", "Johan"]
@@ -32,7 +34,7 @@ class ViewController: UIViewController {
         myActivityIndicator.startAnimating()
 
         //Picker
-        myPickerView.backgroundColor = .lightGray
+        myPickerView.backgroundColor = .purple
         myPickerView.dataSource = self
         myPickerView.delegate = self
         
@@ -64,15 +66,22 @@ class ViewController: UIViewController {
         //Progress Indicators
         myProgressView.progress = 0
         
-    }
-    
-    @IBAction func buttonOne(_ sender: Any) {
+        //Label
+        mySwitchLabel.text = "Apagado"
+        
+        //TextField
+        myTextField.textColor = .purple
+        myTextField.placeholder = "Escribe algo"
+        myTextField.delegate = self
+        
+        //TextView
+        myTextView.textColor = .purple
+        myTextView.delegate = self
     }
     
     @IBAction func myPickerViewAction(_ sender: Any) {
         myPickerView.selectRow(myPageControl.currentPage, inComponent: 0, animated: true)
         let myString = myPickerViewValues[myPageControl.currentPage]
-        buttonOne.setTitle(myString, for: .normal)
         mySegmentedControls.selectedSegmentIndex = myPageControl.currentPage
     }
     
@@ -112,19 +121,23 @@ class ViewController: UIViewController {
         mySlider.value = Float(value)
     }
     
+    @IBAction func myButtonAction(_ sender: Any) {
+        myTextView.resignFirstResponder()
+    }
+    
     @IBAction func mySwitchAction(_ sender: Any) {
         if mySwitch.isOn {
             myPickerView.isHidden = false
             myActivityIndicator.stopAnimating()
             myActivityIndicator.isHidden = true
+            mySwitchLabel.text = "Encendido"
         } else {
             myPickerView.isHidden = true
             myActivityIndicator.startAnimating()
             myActivityIndicator.isHidden = false
+            mySwitchLabel.text = "Apagado"
         }
     }
-    
-    
 }
 
 extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
@@ -142,8 +155,29 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let myString = myPickerViewValues[row]
-        buttonOne.setTitle(myString, for: .normal)
-        
         myPageControl.currentPage = row
     }
+}
+
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        myTextField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        myButton.setTitle(myTextField.text, for: .normal)
+    }
+}
+
+extension ViewController: UITextViewDelegate {
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        myTextField.isHidden = true
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        myTextField.isHidden = false
+    }
+    
 }
