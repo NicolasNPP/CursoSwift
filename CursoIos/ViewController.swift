@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         myPickerView.isHidden = true
+        self.title = "Inicio"
         
         myActivityIndicator.color = .purple
         myActivityIndicator.startAnimating()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9fM-BP-iQc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q87-mQ-aDK">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -161,6 +161,22 @@
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="-1364.0845070422536"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tF4-tL-KJ3">
+            <objects>
+                <navigationController id="q87-mQ-aDK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8dn-dg-eF6">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DqG-pz-pyZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ItE-dH-dT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1600" y="-5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -170,16 +186,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vt-gh-mEF">
-                                <rect key="frame" x="0.0" y="125" width="393" height="216"/>
+                                <rect key="frame" x="0.0" y="169" width="393" height="216"/>
                             </pickerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-CO-2ym">
-                                <rect key="frame" x="100" y="453" width="194" height="26"/>
+                                <rect key="frame" x="100" y="497" width="194" height="26"/>
                                 <connections>
                                     <action selector="myPickerViewAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="pUz-q9-IBn"/>
                                 </connections>
                             </pageControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zXr-sa-RcL">
-                                <rect key="frame" x="62" y="530" width="269" height="32"/>
+                                <rect key="frame" x="62" y="574" width="269" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -189,42 +205,42 @@
                                 </connections>
                             </segmentedControl>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8td-Ng-hrd">
-                                <rect key="frame" x="18" y="594" width="233" height="31"/>
+                                <rect key="frame" x="18" y="638" width="233" height="31"/>
                                 <connections>
                                     <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vD4-Gy-p5k"/>
                                 </connections>
                             </slider>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" maximumValue="104" translatesAutoresizingMaskIntoConstraints="NO" id="hbb-Nf-dcu">
-                                <rect key="frame" x="279" y="593" width="94" height="32"/>
+                                <rect key="frame" x="279" y="637" width="94" height="32"/>
                                 <connections>
                                     <action selector="myStepperAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="jEl-uh-O5L"/>
                                 </connections>
                             </stepper>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-Qj-Mgf">
-                                <rect key="frame" x="20" y="71" width="51" height="31"/>
+                                <rect key="frame" x="20" y="115" width="51" height="31"/>
                                 <connections>
                                     <action selector="mySwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ztt-uu-6U6"/>
                                 </connections>
                             </switch>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3JZ-lC-sSF">
-                                <rect key="frame" x="186.66666666666666" y="223" width="20" height="20"/>
+                                <rect key="frame" x="186.66666666666666" y="267" width="20" height="20"/>
                             </activityIndicatorView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xt5-6s-yRo">
-                                <rect key="frame" x="149" y="651" width="224" height="4"/>
+                                <rect key="frame" x="149" y="695" width="224" height="4"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud2-ek-tqP">
-                                <rect key="frame" x="100" y="76" width="42" height="21"/>
+                                <rect key="frame" x="100" y="120" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsG-7e-9Bj">
-                                <rect key="frame" x="20" y="688" width="168" height="34"/>
+                                <rect key="frame" x="20" y="732" width="168" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHA-Jv-guE">
-                                <rect key="frame" x="249" y="688" width="75" height="34.666666666666629"/>
+                                <rect key="frame" x="249" y="732" width="75" height="34.666666666666629"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -232,7 +248,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-UM-o4Q">
-                                <rect key="frame" x="44" y="755.66666666666663" width="305" height="48.333333333333371"/>
+                                <rect key="frame" x="44" y="799.66666666666663" width="305" height="4.3333333333333712"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -277,6 +293,7 @@
                             <constraint firstItem="zXr-sa-RcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="wp2-MI-N6r"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZbW-WG-eeJ"/>
                     <connections>
                         <outlet property="myActivityIndicator" destination="3JZ-lC-sSF" id="kgg-kJ-rjI"/>
                         <outlet property="myButton" destination="UHA-Jv-guE" id="0vh-NJ-OiJ"/>
