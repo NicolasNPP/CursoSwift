@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MnY-L2-us0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9fM-BP-iQc">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -113,7 +114,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cf-qK-x6X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206.87022900763358" y="-1622.5352112676057"/>
+            <point key="canvasLocation" x="138" y="-1364"/>
+        </scene>
+        <!--Seccion14 View Controller-->
+        <scene sceneID="WwM-24-SH4">
+            <objects>
+                <viewController id="9fM-BP-iQc" customClass="Seccion14ViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FLu-Lb-YTF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVd-Oz-G7y">
+                                <rect key="frame" x="0.0" y="59" width="393" height="323"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="1HN-nh-yOl"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6tc-9L-Akx">
+                                <rect key="frame" x="0.0" y="405" width="393" height="343"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="US3-4t-HHE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BVd-Oz-G7y" firstAttribute="top" secondItem="US3-4t-HHE" secondAttribute="top" id="KhT-gD-Tmj"/>
+                            <constraint firstItem="US3-4t-HHE" firstAttribute="bottom" secondItem="6tc-9L-Akx" secondAttribute="bottom" constant="70" id="LEj-pQ-Ifi"/>
+                            <constraint firstItem="BVd-Oz-G7y" firstAttribute="leading" secondItem="US3-4t-HHE" secondAttribute="leading" id="gut-zg-niW"/>
+                            <constraint firstItem="6tc-9L-Akx" firstAttribute="leading" secondItem="US3-4t-HHE" secondAttribute="leading" id="v4J-FI-aX6"/>
+                            <constraint firstItem="6tc-9L-Akx" firstAttribute="top" secondItem="BVd-Oz-G7y" secondAttribute="bottom" constant="23" id="vtQ-1S-4qR"/>
+                            <constraint firstItem="BVd-Oz-G7y" firstAttribute="trailing" secondItem="US3-4t-HHE" secondAttribute="trailing" id="z5b-k9-dSB"/>
+                            <constraint firstItem="6tc-9L-Akx" firstAttribute="trailing" secondItem="US3-4t-HHE" secondAttribute="trailing" id="zGG-JK-Ghh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myMap" destination="6tc-9L-Akx" id="uhu-Ev-QLP"/>
+                        <outlet property="myWebView" destination="BVd-Oz-G7y" id="1KA-pA-Ywa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUw-HA-Kb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006.8702290076335" y="-1364.0845070422536"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
