@@ -39,6 +39,7 @@
                     <constraint firstItem="Upd-3v-n1y" firstAttribute="top" secondItem="MVv-g8-GnS" secondAttribute="bottom" constant="8" symbolic="YES" id="P4Y-zt-oZU"/>
                     <constraint firstItem="MVv-g8-GnS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="RTS-dh-g2a"/>
                     <constraint firstItem="MVv-g8-GnS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Xef-c4-pnR"/>
+                    <constraint firstAttribute="bottom" secondItem="Upd-3v-n1y" secondAttribute="bottom" constant="12" id="ouI-gE-0o4"/>
                     <constraint firstItem="inV-tv-2i2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="yp7-s6-g6I"/>
                 </constraints>
             </tableViewCellContentView>
