@@ -6,6 +6,7 @@
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -356,6 +357,53 @@
             </objects>
             <point key="canvasLocation" x="-773" y="1689"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="5HL-bX-vwq">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="N3x-qD-hWE" customClass="CollectionViewViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9yv-am-Dmb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sre-54-mFz">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aQR-R3-5HA">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ruf-us-Bo8">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vxg-dC-oEu">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0cg-qn-f0z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sre-54-mFz" firstAttribute="trailing" secondItem="0cg-qn-f0z" secondAttribute="trailing" id="Mlk-ZX-clP"/>
+                            <constraint firstItem="Sre-54-mFz" firstAttribute="bottom" secondItem="0cg-qn-f0z" secondAttribute="bottom" id="OM3-e1-AYX"/>
+                            <constraint firstItem="Sre-54-mFz" firstAttribute="top" secondItem="0cg-qn-f0z" secondAttribute="top" id="fXL-8E-tp5"/>
+                            <constraint firstItem="Sre-54-mFz" firstAttribute="leading" secondItem="0cg-qn-f0z" secondAttribute="leading" id="iSf-cb-MG7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ChC-84-tHX"/>
+                    <connections>
+                        <outlet property="myCV" destination="Sre-54-mFz" id="4aJ-Fd-lOM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsL-5U-5wT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1811.4503816793892" y="2422.535211267606"/>
+        </scene>
         <!--Colores-->
         <scene sceneID="ovd-yr-Pj2">
             <objects>
@@ -479,6 +527,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="gPx-V8-SQi"/>
                         <segue destination="Ykf-dp-dSI" kind="relationship" relationship="viewControllers" id="OES-Q1-aCy"/>
                         <segue destination="7Vx-cg-zz5" kind="relationship" relationship="viewControllers" id="eOg-Re-6m7"/>
+                        <segue destination="N3x-qD-hWE" kind="relationship" relationship="viewControllers" id="QDV-Qg-s65"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1y-py-IoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -25,5 +25,4 @@ class MyCustomTableViewCell: UITableViewCell {
 
         print(myLabel1.text ?? "")
     }
-    
 }
