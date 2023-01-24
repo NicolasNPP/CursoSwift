@@ -15,6 +15,9 @@
 		CE65C8DB2970470700A4AEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE65C8DA2970470700A4AEF5 /* Assets.xcassets */; };
 		CE65C8DE2970470700A4AEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE65C8DC2970470700A4AEF5 /* LaunchScreen.storyboard */; };
 		CE709113297ABC0F0074BC2C /* Seccion14ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE709112297ABC0F0074BC2C /* Seccion14ViewController.swift */; };
+		CE773EA729800CD5005A7665 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EA629800CD5005A7665 /* Automovil.swift */; };
+		CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EA829800D60005A7665 /* AutomovilViewController.swift */; };
+		CE773EAB298015A1005A7665 /* AutoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */; };
 		CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB108297DC217009955E3 /* ColoresViewController.swift */; };
 		CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB10A297DC82B009955E3 /* DestinationViewController.swift */; };
 		CEEFC848297EB4C5002C7DBB /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFC846297EB4C5002C7DBB /* MyCustomTableViewCell.swift */; };
@@ -38,6 +41,9 @@
 		CE65C8DF2970470700A4AEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE65C8E52970475E00A4AEF5 /* SeccionesDelCursoConPlaygrounds.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SeccionesDelCursoConPlaygrounds.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CE709112297ABC0F0074BC2C /* Seccion14ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seccion14ViewController.swift; sourceTree = "<group>"; };
+		CE773EA629800CD5005A7665 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
+		CE773EA829800D60005A7665 /* AutomovilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilViewController.swift; sourceTree = "<group>"; };
+		CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDetalleViewController.swift; sourceTree = "<group>"; };
 		CEDBB108297DC217009955E3 /* ColoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoresViewController.swift; sourceTree = "<group>"; };
 		CEDBB10A297DC82B009955E3 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		CEEFC846297EB4C5002C7DBB /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 		CE65C8D02970470500A4AEF5 /* CursoIos */ = {
 			isa = PBXGroup;
 			children = (
+				CE773EA529800CBF005A7665 /* Seccion17 */,
 				CE269A5C297EAAFD00F16C1D /* Seccion16 */,
 				CEDBB107297DC203009955E3 /* Seccion15 */,
 				CE709111297ABBF40074BC2C /* Seccion14 */,
@@ -123,6 +130,16 @@
 				CEF62946297DB2280064E86D /* PageViewController.swift */,
 			);
 			path = Seccion14;
+			sourceTree = "<group>";
+		};
+		CE773EA529800CBF005A7665 /* Seccion17 */ = {
+			isa = PBXGroup;
+			children = (
+				CE773EA629800CD5005A7665 /* Automovil.swift */,
+				CE773EA829800D60005A7665 /* AutomovilViewController.swift */,
+				CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */,
+			);
+			path = Seccion17;
 			sourceTree = "<group>";
 		};
 		CEDBB107297DC203009955E3 /* Seccion15 */ = {
@@ -217,6 +234,7 @@
 			files = (
 				CEEFC848297EB4C5002C7DBB /* MyCustomTableViewCell.swift in Sources */,
 				CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */,
+				CE773EAB298015A1005A7665 /* AutoDetalleViewController.swift in Sources */,
 				CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */,
 				CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */,
 				CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */,
@@ -226,7 +244,9 @@
 				CEF728CF2979A13200D72869 /* Seccion13ViewController.swift in Sources */,
 				CE709113297ABC0F0074BC2C /* Seccion14ViewController.swift in Sources */,
 				CEEFC84E297EC599002C7DBB /* MyCustomCollectionViewCell.swift in Sources */,
+				CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */,
 				CE269A5E297EAB0E00F16C1D /* TablasViewController.swift in Sources */,
+				CE773EA729800CD5005A7665 /* Automovil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
