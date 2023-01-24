@@ -443,7 +443,7 @@
                                 <rect key="frame" x="16" y="119" width="361" height="634"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCj-22-ypb">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="317"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="211.33333333333334"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constrains de altura y anchura"/>
                                         <connections>
@@ -451,11 +451,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ase-Gm-WJI">
-                                        <rect key="frame" x="0.0" y="317" width="361" height="317"/>
+                                        <rect key="frame" x="0.0" y="211.33333333333331" width="361" height="211.33333333333331"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constrains de posición"/>
                                         <connections>
                                             <segue destination="U1M-OM-Wg4" kind="show" id="bmp-zs-7na"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vht-V9-vio">
+                                        <rect key="frame" x="0.0" y="422.66666666666657" width="361" height="211.33333333333331"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Modificar Constrains por código"/>
+                                        <connections>
+                                            <segue destination="O0E-G5-5bi" kind="show" id="AlQ-6r-NJ0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -476,7 +484,7 @@
             </objects>
             <point key="canvasLocation" x="-884.73282442748086" y="3879.5774647887324"/>
         </scene>
-        <!--View Controller-->
+        <!--Constrains de altura y anchura-->
         <scene sceneID="90n-As-TlK">
             <objects>
                 <viewController id="U1M-OM-Wg4" sceneMemberID="viewController">
@@ -518,13 +526,47 @@
                             <constraint firstItem="bpF-xY-bFT" firstAttribute="leading" secondItem="GSH-5H-JHI" secondAttribute="leading" id="kx4-Is-bAH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="L5S-9T-6y9"/>
+                    <navigationItem key="navigationItem" title="Constrains de altura y anchura" id="L5S-9T-6y9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzq-w3-S1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="206.87022900763358" y="3879.5774647887324"/>
         </scene>
-        <!--View Controller-->
+        <!--Modificar constrains por código-->
+        <scene sceneID="cJa-hp-aes">
+            <objects>
+                <viewController id="O0E-G5-5bi" customClass="ModificarConstrainsViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rbE-2O-3k4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-dE-K2q">
+                                <rect key="frame" x="20" y="123" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1N9-fx-7X0"/>
+                                    <constraint firstAttribute="width" constant="200" id="WRO-O0-xe6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ViS-Hm-K6G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eFL-dE-K2q" firstAttribute="leading" secondItem="ViS-Hm-K6G" secondAttribute="leading" constant="20" id="PTk-BR-veL"/>
+                            <constraint firstItem="eFL-dE-K2q" firstAttribute="top" secondItem="ViS-Hm-K6G" secondAttribute="top" constant="20" id="wQG-sF-68p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modificar constrains por código" id="BUW-55-Fyy"/>
+                    <connections>
+                        <outlet property="leftConstrain" destination="PTk-BR-veL" id="egT-ea-BcF"/>
+                        <outlet property="topConstrain" destination="wQG-sF-68p" id="576-3L-4jR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Oa-gr-88G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-885" y="4611"/>
+        </scene>
+        <!--Constrains por posición-->
         <scene sceneID="Hpl-ar-gAB">
             <objects>
                 <viewController id="nsY-Yy-0dD" sceneMemberID="viewController">
@@ -548,7 +590,7 @@
                             <constraint firstItem="Bg1-2W-IWl" firstAttribute="leading" secondItem="6jV-ev-NIN" secondAttribute="leading" constant="28" id="XMz-eB-3fF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bxQ-2a-imC"/>
+                    <navigationItem key="navigationItem" title="Constrains por posición" id="bxQ-2a-imC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t7J-eG-8Lr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
