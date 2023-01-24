@@ -18,6 +18,7 @@
 		CE773EA729800CD5005A7665 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EA629800CD5005A7665 /* Automovil.swift */; };
 		CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EA829800D60005A7665 /* AutomovilViewController.swift */; };
 		CE773EAB298015A1005A7665 /* AutoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */; };
+		CE773EAD298019F5005A7665 /* AutomovilElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EAC298019F5005A7665 /* AutomovilElectrico.swift */; };
 		CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB108297DC217009955E3 /* ColoresViewController.swift */; };
 		CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB10A297DC82B009955E3 /* DestinationViewController.swift */; };
 		CEEFC848297EB4C5002C7DBB /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFC846297EB4C5002C7DBB /* MyCustomTableViewCell.swift */; };
@@ -44,6 +45,7 @@
 		CE773EA629800CD5005A7665 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
 		CE773EA829800D60005A7665 /* AutomovilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilViewController.swift; sourceTree = "<group>"; };
 		CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDetalleViewController.swift; sourceTree = "<group>"; };
+		CE773EAC298019F5005A7665 /* AutomovilElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilElectrico.swift; sourceTree = "<group>"; };
 		CEDBB108297DC217009955E3 /* ColoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoresViewController.swift; sourceTree = "<group>"; };
 		CEDBB10A297DC82B009955E3 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		CEEFC846297EB4C5002C7DBB /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				CE773EA629800CD5005A7665 /* Automovil.swift */,
+				CE773EAC298019F5005A7665 /* AutomovilElectrico.swift */,
 				CE773EA829800D60005A7665 /* AutomovilViewController.swift */,
 				CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */,
 			);
@@ -245,6 +248,7 @@
 				CE709113297ABC0F0074BC2C /* Seccion14ViewController.swift in Sources */,
 				CEEFC84E297EC599002C7DBB /* MyCustomCollectionViewCell.swift in Sources */,
 				CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */,
+				CE773EAD298019F5005A7665 /* AutomovilElectrico.swift in Sources */,
 				CE269A5E297EAB0E00F16C1D /* TablasViewController.swift in Sources */,
 				CE773EA729800CD5005A7665 /* Automovil.swift in Sources */,
 			);

@@ -405,7 +405,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRe-VT-vtg">
                                 <rect key="frame" x="86" y="102" width="221" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Crear automovil deportivo"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crea deportivo eléctrico"/>
                                 <connections>
                                     <action selector="createDepCar:" destination="bax-lv-t2E" eventType="touchUpInside" id="02d-FM-WEi"/>
                                 </connections>
@@ -439,7 +439,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Qx-8g-0Ps">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Qx-8g-0Ps">
                                 <rect key="frame" x="0.0" y="59" width="393" height="275"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdh-Ph-uvh">
@@ -450,12 +450,20 @@
                                     <action selector="buttonOn:" destination="itC-xF-xbM" eventType="touchUpInside" id="0g9-KV-HIa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEL-Xe-BME">
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEL-Xe-BME">
                                 <rect key="frame" x="157" y="353" width="79" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
                                 <connections>
                                     <action selector="buttonOff:" destination="itC-xF-xbM" eventType="touchUpInside" id="zq5-G0-bki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-Qv-wn5">
+                                <rect key="frame" x="124" y="396" width="144" height="35.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ver información"/>
+                                <connections>
+                                    <action selector="buttonViewInfo:" destination="itC-xF-xbM" eventType="touchUpInside" id="uPm-ip-Kwf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP9-D6-iff">
@@ -466,24 +474,17 @@
                                     <action selector="buttonAc:" destination="itC-xF-xbM" eventType="touchUpInside" id="KeO-sH-Eni"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eJ-hS-KMN">
-                                <rect key="frame" x="175" y="550" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eJ-hS-KMN">
+                                <rect key="frame" x="45" y="550.66666666666663" width="302" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnY-Qv-wn5">
-                                <rect key="frame" x="124" y="396" width="144" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ver información"/>
-                                <connections>
-                                    <action selector="buttonViewInfo:" destination="itC-xF-xbM" eventType="touchUpInside" id="uPm-ip-Kwf"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mig-n6-rwS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="mig-n6-rwS" firstAttribute="trailing" secondItem="0eJ-hS-KMN" secondAttribute="trailing" constant="46" id="4kR-F4-VpR"/>
                             <constraint firstItem="TP9-D6-iff" firstAttribute="leading" secondItem="IEL-Xe-BME" secondAttribute="trailing" constant="53" id="6cs-kB-mhE"/>
                             <constraint firstItem="ZnY-Qv-wn5" firstAttribute="top" secondItem="IEL-Xe-BME" secondAttribute="bottom" constant="8" symbolic="YES" id="76D-55-3g9"/>
                             <constraint firstItem="mig-n6-rwS" firstAttribute="trailing" secondItem="ZnY-Qv-wn5" secondAttribute="trailing" constant="125" id="9Xf-Hv-DtO"/>
@@ -491,6 +492,7 @@
                             <constraint firstItem="ZnY-Qv-wn5" firstAttribute="top" secondItem="IEL-Xe-BME" secondAttribute="bottom" constant="8" symbolic="YES" id="Ga3-eR-zPM"/>
                             <constraint firstItem="0eJ-hS-KMN" firstAttribute="top" secondItem="ZnY-Qv-wn5" secondAttribute="bottom" constant="119" id="RO7-eY-hCa"/>
                             <constraint firstItem="mig-n6-rwS" firstAttribute="bottom" secondItem="TP9-D6-iff" secondAttribute="bottom" constant="430" id="Te2-LI-XiG"/>
+                            <constraint firstItem="0eJ-hS-KMN" firstAttribute="leading" secondItem="mig-n6-rwS" secondAttribute="leading" constant="45" id="UBC-eZ-eBQ"/>
                             <constraint firstItem="ZnY-Qv-wn5" firstAttribute="leading" secondItem="mig-n6-rwS" secondAttribute="leading" constant="124" id="Uyu-Xp-lzC"/>
                             <constraint firstItem="mig-n6-rwS" firstAttribute="bottom" secondItem="0eJ-hS-KMN" secondAttribute="bottom" constant="247" id="WA5-8A-NaR"/>
                             <constraint firstItem="IEL-Xe-BME" firstAttribute="top" secondItem="1Qx-8g-0Ps" secondAttribute="bottom" constant="19" id="WIt-Pt-SEy"/>
@@ -502,8 +504,6 @@
                             <constraint firstItem="TP9-D6-iff" firstAttribute="leading" secondItem="IEL-Xe-BME" secondAttribute="trailing" constant="53" id="oIW-vD-CZd"/>
                             <constraint firstItem="mig-n6-rwS" firstAttribute="trailing" secondItem="TP9-D6-iff" secondAttribute="trailing" constant="16" id="oik-1f-nae"/>
                             <constraint firstItem="1Qx-8g-0Ps" firstAttribute="top" secondItem="mig-n6-rwS" secondAttribute="top" id="pcK-dZ-gFd"/>
-                            <constraint firstItem="0eJ-hS-KMN" firstAttribute="leading" secondItem="mig-n6-rwS" secondAttribute="leading" constant="175" id="sl0-mc-y9n"/>
-                            <constraint firstItem="mig-n6-rwS" firstAttribute="trailing" secondItem="0eJ-hS-KMN" secondAttribute="trailing" constant="176" id="utZ-pa-kco"/>
                             <constraint firstItem="1Qx-8g-0Ps" firstAttribute="leading" secondItem="mig-n6-rwS" secondAttribute="leading" id="vH2-8b-io8"/>
                             <constraint firstItem="IEL-Xe-BME" firstAttribute="leading" secondItem="Hdh-Ph-uvh" secondAttribute="trailing" constant="44" id="wHR-0k-NSE"/>
                             <constraint firstItem="IEL-Xe-BME" firstAttribute="leading" secondItem="Hdh-Ph-uvh" secondAttribute="trailing" constant="44" id="xcc-Bv-6sX"/>

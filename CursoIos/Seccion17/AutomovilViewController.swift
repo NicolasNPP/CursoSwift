@@ -16,7 +16,7 @@ class AutomovilViewController: UIViewController {
         self.modalPresentationStyle = .fullScreen
         let automovil = Automovil()
         
-        print("Encender automovil: \(automovil.encender())")
+        print("Encender automovil: \(automovil.on())")
     }
     
     @IBAction func createCar(_ sender: Any) {

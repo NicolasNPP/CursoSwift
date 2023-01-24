@@ -11,13 +11,18 @@ class Automovil {
     var color = "neutro"
     var numeroLlantas = 4
     var precio = 0
+    var encendido = false
     
-    func encender() -> Bool {
-        return true
+    func on() {
+        encendido = true
     }
     
-    func apagar() -> Bool {
-        return false
+    func off() {
+        encendido = false
+    }
+    
+    func speedUp() -> Bool {
+        return true
     }
 }
 
