@@ -186,6 +186,7 @@
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LJO-tz-ltZ">
                                 <rect key="frame" x="186" y="500" width="20" height="20"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-fH-uQ6">
                                 <rect key="frame" x="16" y="472" width="361" height="21"/>
