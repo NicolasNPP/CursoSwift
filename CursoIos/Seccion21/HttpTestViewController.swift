@@ -9,11 +9,34 @@ import UIKit
 
 class HttpTestViewController: UIViewController {
 
+    
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        name.text = ""
+        email.text = ""
+        loading.hidesWhenStopped = true
+        loading.stopAnimating()
     }
     
     @IBAction func getAlamoFire(_ sender: Any) {
-        NetworkingProvider.shared.getUser(id: 492)
+        
+        self.name.text = ""
+        self.email.text = ""
+        loading.startAnimating()
+        
+        NetworkingProvider.shared.getUser(id: 493) { (user) in
+                
+            self.name.text = user.name
+            self.email.text = user.email
+            self.loading.stopAnimating()
+            
+        } failure: { error in
+            self.name.text = "Error en la peticióna"
+            self.loading.stopAnimating()
+        }
     }
 }

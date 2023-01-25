@@ -171,26 +171,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-gh-jhz">
-                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="144.66666666666666" y="408.33333333333331" width="104" height="35.333333333333314"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET USER"/>
                                 <connections>
                                     <action selector="getAlamoFire:" destination="a3N-se-kc3" eventType="touchUpInside" id="t3q-yt-VSW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK3-O3-QrV">
+                                <rect key="frame" x="16" y="514.33333333333337" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LJO-tz-ltZ">
+                                <rect key="frame" x="186" y="500" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-fH-uQ6">
+                                <rect key="frame" x="16" y="472" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UZV-AP-Wow"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GE6-gh-jhz" firstAttribute="centerY" secondItem="Izb-fK-zVa" secondAttribute="centerY" id="5ey-cx-Nt0"/>
+                            <constraint firstItem="UZV-AP-Wow" firstAttribute="bottom" secondItem="LJO-tz-ltZ" secondAttribute="bottom" constant="249" id="IXp-IA-gr1"/>
+                            <constraint firstItem="BGV-fH-uQ6" firstAttribute="leading" secondItem="UZV-AP-Wow" secondAttribute="leading" constant="16" id="OwX-Bu-zBu"/>
+                            <constraint firstItem="BGV-fH-uQ6" firstAttribute="top" secondItem="GE6-gh-jhz" secondAttribute="bottom" constant="28.329999999999998" id="Q9K-Zk-QCx"/>
+                            <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="BGV-fH-uQ6" secondAttribute="trailing" constant="16" id="UUI-Lv-DlQ"/>
+                            <constraint firstItem="LJO-tz-ltZ" firstAttribute="top" secondItem="GE6-gh-jhz" secondAttribute="bottom" constant="56.329999999999998" id="UiW-pQ-tq4"/>
+                            <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="XK3-O3-QrV" secondAttribute="trailing" constant="16" id="Vxw-sw-2WB"/>
+                            <constraint firstItem="XK3-O3-QrV" firstAttribute="top" secondItem="BGV-fH-uQ6" secondAttribute="bottom" constant="21.329999999999998" id="jb0-Zo-E5M"/>
+                            <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="LJO-tz-ltZ" secondAttribute="trailing" constant="187" id="klM-r8-gZN"/>
+                            <constraint firstItem="LJO-tz-ltZ" firstAttribute="leading" secondItem="UZV-AP-Wow" secondAttribute="leading" constant="186" id="oPG-m1-OC4"/>
                             <constraint firstItem="GE6-gh-jhz" firstAttribute="centerX" secondItem="Izb-fK-zVa" secondAttribute="centerX" id="qRP-hT-8RX"/>
+                            <constraint firstItem="XK3-O3-QrV" firstAttribute="leading" secondItem="UZV-AP-Wow" secondAttribute="leading" constant="16" id="zdZ-6k-ke6"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Web AlamoFire" image="cloud" catalog="system" id="Ktx-H2-Mtj"/>
+                    <connections>
+                        <outlet property="email" destination="XK3-O3-QrV" id="pqK-4F-yey"/>
+                        <outlet property="loading" destination="LJO-tz-ltZ" id="Yrw-zA-mB9"/>
+                        <outlet property="name" destination="BGV-fH-uQ6" id="Y8C-Qx-thm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMz-Kw-gUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="-518"/>
+            <point key="canvasLocation" x="125.95419847328243" y="-518.30985915492965"/>
         </scene>
         <!--Componentes-->
         <scene sceneID="tne-QT-ifu">
