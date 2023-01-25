@@ -12,6 +12,10 @@
 		CE463B8B2981A85C00DEA207 /* CursoIos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE463B892981A85C00DEA207 /* CursoIos.xcdatamodeld */; };
 		CE463B8E2981A8F100DEA207 /* Pais+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8C2981A8F100DEA207 /* Pais+CoreDataClass.swift */; };
 		CE463B8F2981A8F100DEA207 /* Pais+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8D2981A8F100DEA207 /* Pais+CoreDataProperties.swift */; };
+		CE463B922981B94400DEA207 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE463B912981B94400DEA207 /* Alamofire */; };
+		CE463B942981B96B00DEA207 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B932981B96B00DEA207 /* NetworkingProvider.swift */; };
+		CE463B9A2981BA7000DEA207 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B992981BA7000DEA207 /* User.swift */; };
+		CE463B9C2981BD2C00DEA207 /* HttpTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9B2981BD2C00DEA207 /* HttpTestViewController.swift */; };
 		CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D12970470500A4AEF5 /* AppDelegate.swift */; };
 		CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */; };
 		CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D52970470500A4AEF5 /* ViewController.swift */; };
@@ -42,6 +46,9 @@
 		CE463B8A2981A85C00DEA207 /* CursoIos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CursoIos.xcdatamodel; sourceTree = "<group>"; };
 		CE463B8C2981A8F100DEA207 /* Pais+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pais+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CE463B8D2981A8F100DEA207 /* Pais+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pais+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CE463B932981B96B00DEA207 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
+		CE463B992981BA7000DEA207 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE463B9B2981BD2C00DEA207 /* HttpTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTestViewController.swift; sourceTree = "<group>"; };
 		CE65C8CE2970470500A4AEF5 /* CursoIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65C8D12970470500A4AEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE463B922981B94400DEA207 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +104,27 @@
 		CE463B6029817A0200DEA207 /* Seccion21 */ = {
 			isa = PBXGroup;
 			children = (
-				CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */,
+				CE463B952981B9FD00DEA207 /* Network */,
+				CE463B9B2981BD2C00DEA207 /* HttpTestViewController.swift */,
 			);
 			path = Seccion21;
+			sourceTree = "<group>";
+		};
+		CE463B952981B9FD00DEA207 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B932981B96B00DEA207 /* NetworkingProvider.swift */,
+				CE463B962981BA0F00DEA207 /* Data */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE463B962981BA0F00DEA207 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B992981BA7000DEA207 /* User.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		CE65C8C52970470500A4AEF5 = {
@@ -173,6 +199,7 @@
 		CE773EAE29807D6C005A7665 /* Seccion19 */ = {
 			isa = PBXGroup;
 			children = (
+				CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */,
 				CE773EAF29807D7F005A7665 /* ModificarConstrainsViewController.swift */,
 				CE773EB129814687005A7665 /* ConstrainsPorCodigoViewController.swift */,
 			);
@@ -212,6 +239,9 @@
 			dependencies = (
 			);
 			name = CursoIos;
+			packageProductDependencies = (
+				CE463B912981B94400DEA207 /* Alamofire */,
+			);
 			productName = CursoIos;
 			productReference = CE65C8CE2970470500A4AEF5 /* CursoIos.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +270,9 @@
 				Base,
 			);
 			mainGroup = CE65C8C52970470500A4AEF5;
+			packageReferences = (
+				CE463B902981B94400DEA207 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CE65C8CF2970470500A4AEF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -277,10 +310,12 @@
 				CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */,
 				CE463B8F2981A8F100DEA207 /* Pais+CoreDataProperties.swift in Sources */,
 				CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */,
+				CE463B9C2981BD2C00DEA207 /* HttpTestViewController.swift in Sources */,
 				CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */,
 				CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */,
 				CE773EB229814687005A7665 /* ConstrainsPorCodigoViewController.swift in Sources */,
 				CEEFC84B297EC491002C7DBB /* CollectionViewViewController.swift in Sources */,
+				CE463B942981B96B00DEA207 /* NetworkingProvider.swift in Sources */,
 				CEF62947297DB2280064E86D /* PageViewController.swift in Sources */,
 				CEF728CF2979A13200D72869 /* Seccion13ViewController.swift in Sources */,
 				CE463B8E2981A8F100DEA207 /* Pais+CoreDataClass.swift in Sources */,
@@ -288,6 +323,7 @@
 				CEEFC84E297EC599002C7DBB /* MyCustomCollectionViewCell.swift in Sources */,
 				CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */,
 				CE773EAD298019F5005A7665 /* AutomovilElectrico.swift in Sources */,
+				CE463B9A2981BA7000DEA207 /* User.swift in Sources */,
 				CE269A5E297EAB0E00F16C1D /* TablasViewController.swift in Sources */,
 				CE773EA729800CD5005A7665 /* Automovil.swift in Sources */,
 				CE773EB029807D7F005A7665 /* ModificarConstrainsViewController.swift in Sources */,
@@ -508,6 +544,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE463B902981B94400DEA207 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE463B912981B94400DEA207 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE463B902981B94400DEA207 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CE463B892981A85C00DEA207 /* CursoIos.xcdatamodeld */ = {

@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gan-fC-Hyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.53488372093022" y="-677.2532188841202"/>
+            <point key="canvasLocation" x="-773" y="-1364"/>
         </scene>
         <!--Seccion14 View Controller-->
         <scene sceneID="ejY-l0-Sp5">
@@ -161,6 +161,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AUw-HA-Kb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="-1364.0845070422536"/>
+        </scene>
+        <!--Web AlamoFire-->
+        <scene sceneID="h7o-oY-7WG">
+            <objects>
+                <viewController id="a3N-se-kc3" customClass="HttpTestViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Izb-fK-zVa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE6-gh-jhz">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="getAlamoFire:" destination="a3N-se-kc3" eventType="touchUpInside" id="t3q-yt-VSW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UZV-AP-Wow"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GE6-gh-jhz" firstAttribute="centerY" secondItem="Izb-fK-zVa" secondAttribute="centerY" id="5ey-cx-Nt0"/>
+                            <constraint firstItem="GE6-gh-jhz" firstAttribute="centerX" secondItem="Izb-fK-zVa" secondAttribute="centerX" id="qRP-hT-8RX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web AlamoFire" image="cloud" catalog="system" id="Ktx-H2-Mtj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMz-Kw-gUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-518"/>
         </scene>
         <!--Componentes-->
         <scene sceneID="tne-QT-ifu">
@@ -296,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.1679389312977" y="-2.8169014084507045"/>
+            <point key="canvasLocation" x="127" y="207"/>
         </scene>
         <!--Paises con Core Data-->
         <scene sceneID="DSK-AN-GPc">
@@ -322,7 +352,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Paises con Core Data" id="eQD-xr-ud9">
-                        <barButtonItem key="rightBarButtonItem" title="Add Country" id="MKd-VS-rWD">
+                        <barButtonItem key="rightBarButtonItem" title="+ Country" id="MKd-VS-rWD">
                             <connections>
                                 <action selector="AddCountr:" destination="7Vx-cg-zz5" id="Ocb-Ln-AjW"/>
                             </connections>
@@ -1046,6 +1076,7 @@
                         <segue destination="bax-lv-t2E" kind="relationship" relationship="viewControllers" id="A9w-zI-DhJ"/>
                         <segue destination="mzf-Nc-HXp" kind="relationship" relationship="viewControllers" id="yOI-Uh-46g"/>
                         <segue destination="Rqr-vF-pBn" kind="relationship" relationship="viewControllers" id="ugL-Lx-Zkd"/>
+                        <segue destination="a3N-se-kc3" kind="relationship" relationship="viewControllers" id="4HZ-2N-QiQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1y-py-IoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1172,6 +1203,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="car" catalog="system" width="128" height="95"/>
+        <image name="cloud" catalog="system" width="128" height="87"/>
         <image name="lane" catalog="system" width="128" height="97"/>
         <image name="paintbrush" catalog="system" width="122" height="128"/>
         <image name="server.rack" catalog="system" width="128" height="93"/>

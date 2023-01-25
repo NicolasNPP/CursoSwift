@@ -38,7 +38,6 @@ class TablasViewController: UIViewController {
                 self.tView.reloadData()
             }
             
-            
         } catch {
             print("Error recuperando datos")
         }
