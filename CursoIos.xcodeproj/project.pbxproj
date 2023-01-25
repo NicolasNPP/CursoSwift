@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE269A5E297EAB0E00F16C1D /* TablasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE269A5D297EAB0E00F16C1D /* TablasViewController.swift */; };
+		CE463B6229817A1100DEA207 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */; };
 		CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D12970470500A4AEF5 /* AppDelegate.swift */; };
 		CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */; };
 		CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D52970470500A4AEF5 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		CE269A5D297EAB0E00F16C1D /* TablasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablasViewController.swift; sourceTree = "<group>"; };
+		CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
 		CE65C8CE2970470500A4AEF5 /* CursoIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65C8D12970470500A4AEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 			path = Seccion16;
 			sourceTree = "<group>";
 		};
+		CE463B6029817A0200DEA207 /* Seccion21 */ = {
+			isa = PBXGroup;
+			children = (
+				CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */,
+			);
+			path = Seccion21;
+			sourceTree = "<group>";
+		};
 		CE65C8C52970470500A4AEF5 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		CE65C8D02970470500A4AEF5 /* CursoIos */ = {
 			isa = PBXGroup;
 			children = (
+				CE463B6029817A0200DEA207 /* Seccion21 */,
 				CE773EAE29807D6C005A7665 /* Seccion19 */,
 				CE773EA529800CBF005A7665 /* Seccion17 */,
 				CE269A5C297EAAFD00F16C1D /* Seccion16 */,
@@ -251,6 +262,7 @@
 			files = (
 				CEEFC848297EB4C5002C7DBB /* MyCustomTableViewCell.swift in Sources */,
 				CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */,
+				CE463B6229817A1100DEA207 /* UserDefaultsViewController.swift in Sources */,
 				CE773EAB298015A1005A7665 /* AutoDetalleViewController.swift in Sources */,
 				CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */,
 				CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */,
