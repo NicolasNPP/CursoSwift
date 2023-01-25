@@ -7,10 +7,18 @@
 
 import Foundation
 
-struct User: Decodable {
+struct User: Codable {
     let id: Int
     let name: String
     let email: String
     let gender: String
     let status: String
+    
+    enum codingKeys: String, CodingKey {
+        case id
+        case name
+        case email
+        case gender
+        case status
+    }
 }
