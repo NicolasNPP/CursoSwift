@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CE269A5E297EAB0E00F16C1D /* TablasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE269A5D297EAB0E00F16C1D /* TablasViewController.swift */; };
 		CE463B6229817A1100DEA207 /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */; };
+		CE463B8B2981A85C00DEA207 /* CursoIos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE463B892981A85C00DEA207 /* CursoIos.xcdatamodeld */; };
+		CE463B8E2981A8F100DEA207 /* Pais+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8C2981A8F100DEA207 /* Pais+CoreDataClass.swift */; };
+		CE463B8F2981A8F100DEA207 /* Pais+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B8D2981A8F100DEA207 /* Pais+CoreDataProperties.swift */; };
 		CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D12970470500A4AEF5 /* AppDelegate.swift */; };
 		CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */; };
 		CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D52970470500A4AEF5 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* Begin PBXFileReference section */
 		CE269A5D297EAB0E00F16C1D /* TablasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablasViewController.swift; sourceTree = "<group>"; };
 		CE463B6129817A1100DEA207 /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		CE463B8A2981A85C00DEA207 /* CursoIos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CursoIos.xcdatamodel; sourceTree = "<group>"; };
+		CE463B8C2981A8F100DEA207 /* Pais+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pais+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CE463B8D2981A8F100DEA207 /* Pais+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pais+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CE65C8CE2970470500A4AEF5 /* CursoIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65C8D12970470500A4AEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +104,8 @@
 		CE65C8C52970470500A4AEF5 = {
 			isa = PBXGroup;
 			children = (
+				CE463B8C2981A8F100DEA207 /* Pais+CoreDataClass.swift */,
+				CE463B8D2981A8F100DEA207 /* Pais+CoreDataProperties.swift */,
 				CE65C8D02970470500A4AEF5 /* CursoIos */,
 				CE65C8CF2970470500A4AEF5 /* Products */,
 			);
@@ -129,6 +137,7 @@
 				CE65C8DA2970470700A4AEF5 /* Assets.xcassets */,
 				CE65C8DC2970470700A4AEF5 /* LaunchScreen.storyboard */,
 				CE65C8DF2970470700A4AEF5 /* Info.plist */,
+				CE463B892981A85C00DEA207 /* CursoIos.xcdatamodeld */,
 			);
 			path = CursoIos;
 			sourceTree = "<group>";
@@ -260,11 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE463B8B2981A85C00DEA207 /* CursoIos.xcdatamodeld in Sources */,
 				CEEFC848297EB4C5002C7DBB /* MyCustomTableViewCell.swift in Sources */,
 				CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */,
 				CE463B6229817A1100DEA207 /* UserDefaultsViewController.swift in Sources */,
 				CE773EAB298015A1005A7665 /* AutoDetalleViewController.swift in Sources */,
 				CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */,
+				CE463B8F2981A8F100DEA207 /* Pais+CoreDataProperties.swift in Sources */,
 				CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */,
 				CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */,
 				CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */,
@@ -272,6 +283,7 @@
 				CEEFC84B297EC491002C7DBB /* CollectionViewViewController.swift in Sources */,
 				CEF62947297DB2280064E86D /* PageViewController.swift in Sources */,
 				CEF728CF2979A13200D72869 /* Seccion13ViewController.swift in Sources */,
+				CE463B8E2981A8F100DEA207 /* Pais+CoreDataClass.swift in Sources */,
 				CE709113297ABC0F0074BC2C /* Seccion14ViewController.swift in Sources */,
 				CEEFC84E297EC599002C7DBB /* MyCustomCollectionViewCell.swift in Sources */,
 				CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */,
@@ -496,6 +508,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE463B892981A85C00DEA207 /* CursoIos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE463B8A2981A85C00DEA207 /* CursoIos.xcdatamodel */,
+			);
+			currentVersion = CE463B8A2981A85C00DEA207 /* CursoIos.xcdatamodel */;
+			path = CursoIos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE65C8C62970470500A4AEF5 /* Project object */;
 }
