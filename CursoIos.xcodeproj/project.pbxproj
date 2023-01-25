@@ -20,6 +20,7 @@
 		CE773EAB298015A1005A7665 /* AutoDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */; };
 		CE773EAD298019F5005A7665 /* AutomovilElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EAC298019F5005A7665 /* AutomovilElectrico.swift */; };
 		CE773EB029807D7F005A7665 /* ModificarConstrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EAF29807D7F005A7665 /* ModificarConstrainsViewController.swift */; };
+		CE773EB229814687005A7665 /* ConstrainsPorCodigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE773EB129814687005A7665 /* ConstrainsPorCodigoViewController.swift */; };
 		CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB108297DC217009955E3 /* ColoresViewController.swift */; };
 		CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDBB10A297DC82B009955E3 /* DestinationViewController.swift */; };
 		CEEFC848297EB4C5002C7DBB /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEFC846297EB4C5002C7DBB /* MyCustomTableViewCell.swift */; };
@@ -48,6 +49,7 @@
 		CE773EAA298015A1005A7665 /* AutoDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDetalleViewController.swift; sourceTree = "<group>"; };
 		CE773EAC298019F5005A7665 /* AutomovilElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilElectrico.swift; sourceTree = "<group>"; };
 		CE773EAF29807D7F005A7665 /* ModificarConstrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModificarConstrainsViewController.swift; sourceTree = "<group>"; };
+		CE773EB129814687005A7665 /* ConstrainsPorCodigoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstrainsPorCodigoViewController.swift; sourceTree = "<group>"; };
 		CEDBB108297DC217009955E3 /* ColoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoresViewController.swift; sourceTree = "<group>"; };
 		CEDBB10A297DC82B009955E3 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		CEEFC846297EB4C5002C7DBB /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				CE773EAF29807D7F005A7665 /* ModificarConstrainsViewController.swift */,
+				CE773EB129814687005A7665 /* ConstrainsPorCodigoViewController.swift */,
 			);
 			path = Seccion19;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				CEDBB109297DC217009955E3 /* ColoresViewController.swift in Sources */,
 				CEDBB10B297DC82B009955E3 /* DestinationViewController.swift in Sources */,
 				CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */,
+				CE773EB229814687005A7665 /* ConstrainsPorCodigoViewController.swift in Sources */,
 				CEEFC84B297EC491002C7DBB /* CollectionViewViewController.swift in Sources */,
 				CEF62947297DB2280064E86D /* PageViewController.swift in Sources */,
 				CEF728CF2979A13200D72869 /* Seccion13ViewController.swift in Sources */,
