@@ -162,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="1006.8702290076335" y="-1364.0845070422536"/>
         </scene>
-        <!--Web AlamoFire-->
+        <!--Http Test View Controller-->
         <scene sceneID="h7o-oY-7WG">
             <objects>
                 <viewController id="a3N-se-kc3" customClass="HttpTestViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
@@ -188,6 +188,14 @@
                                 <rect key="frame" x="186" y="500" width="20" height="20"/>
                                 <color key="tintColor" systemColor="systemPurpleColor"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWU-X4-fUE">
+                                <rect key="frame" x="97" y="715" width="200" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Crear un nuevo usuario"/>
+                                <connections>
+                                    <segue destination="rgF-eT-pUP" kind="show" id="Sm3-lF-4sd"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGV-fH-uQ6">
                                 <rect key="frame" x="16" y="472" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -205,14 +213,17 @@
                             <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="BGV-fH-uQ6" secondAttribute="trailing" constant="16" id="UUI-Lv-DlQ"/>
                             <constraint firstItem="LJO-tz-ltZ" firstAttribute="top" secondItem="GE6-gh-jhz" secondAttribute="bottom" constant="56.329999999999998" id="UiW-pQ-tq4"/>
                             <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="XK3-O3-QrV" secondAttribute="trailing" constant="16" id="Vxw-sw-2WB"/>
+                            <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="IWU-X4-fUE" secondAttribute="trailing" constant="96" id="Ycj-EB-bSX"/>
+                            <constraint firstItem="IWU-X4-fUE" firstAttribute="leading" secondItem="UZV-AP-Wow" secondAttribute="leading" constant="97" id="caE-Uw-MVM"/>
                             <constraint firstItem="XK3-O3-QrV" firstAttribute="top" secondItem="BGV-fH-uQ6" secondAttribute="bottom" constant="21.329999999999998" id="jb0-Zo-E5M"/>
                             <constraint firstItem="UZV-AP-Wow" firstAttribute="trailing" secondItem="LJO-tz-ltZ" secondAttribute="trailing" constant="187" id="klM-r8-gZN"/>
                             <constraint firstItem="LJO-tz-ltZ" firstAttribute="leading" secondItem="UZV-AP-Wow" secondAttribute="leading" constant="186" id="oPG-m1-OC4"/>
                             <constraint firstItem="GE6-gh-jhz" firstAttribute="centerX" secondItem="Izb-fK-zVa" secondAttribute="centerX" id="qRP-hT-8RX"/>
+                            <constraint firstItem="UZV-AP-Wow" firstAttribute="bottom" secondItem="IWU-X4-fUE" secondAttribute="bottom" constant="19" id="tnK-fm-nVP"/>
                             <constraint firstItem="XK3-O3-QrV" firstAttribute="leading" secondItem="UZV-AP-Wow" secondAttribute="leading" constant="16" id="zdZ-6k-ke6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Web AlamoFire" image="cloud" catalog="system" id="Ktx-H2-Mtj"/>
+                    <navigationItem key="navigationItem" id="D47-9f-tD1"/>
                     <connections>
                         <outlet property="email" destination="XK3-O3-QrV" id="pqK-4F-yey"/>
                         <outlet property="loading" destination="LJO-tz-ltZ" id="Yrw-zA-mB9"/>
@@ -221,7 +232,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EMz-Kw-gUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.95419847328243" y="-518.30985915492965"/>
+            <point key="canvasLocation" x="1052.6717557251909" y="-518.30985915492965"/>
+        </scene>
+        <!--New User View Controller-->
+        <scene sceneID="HVs-oJ-LPd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="rgF-eT-pUP" customClass="NewUserViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Xx-4Y-jne">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETR-jd-3vx">
+                                <rect key="frame" x="16" y="140" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCp-u8-quf">
+                                <rect key="frame" x="16" y="212" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA2-rV-5gK">
+                                <rect key="frame" x="138.66666666666666" y="408.66666666666669" width="116" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="POST USER"/>
+                                <connections>
+                                    <action selector="addUserAction:" destination="rgF-eT-pUP" eventType="touchUpInside" id="z5L-Ax-dU2"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="49a-CF-Tz4">
+                                <rect key="frame" x="16" y="177" width="361" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vi4-Sk-nXv">
+                                <rect key="frame" x="175" y="176" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hoc-go-kfD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vi4-Sk-nXv" firstAttribute="top" secondItem="ETR-jd-3vx" secondAttribute="bottom" constant="15" id="50v-Ct-1aL"/>
+                            <constraint firstItem="vi4-Sk-nXv" firstAttribute="leading" secondItem="Hoc-go-kfD" secondAttribute="leading" constant="175" id="9nW-5D-QjD"/>
+                            <constraint firstItem="Hoc-go-kfD" firstAttribute="trailing" secondItem="ETR-jd-3vx" secondAttribute="trailing" constant="16" id="DCU-pu-ndK"/>
+                            <constraint firstItem="Hoc-go-kfD" firstAttribute="trailing" secondItem="49a-CF-Tz4" secondAttribute="trailing" constant="16" id="Hhd-a2-tOF"/>
+                            <constraint firstItem="ETR-jd-3vx" firstAttribute="leading" secondItem="Hoc-go-kfD" secondAttribute="leading" constant="16" id="J6l-q4-Wng"/>
+                            <constraint firstItem="Hoc-go-kfD" firstAttribute="trailing" secondItem="vi4-Sk-nXv" secondAttribute="trailing" constant="176" id="JaS-ik-ttq"/>
+                            <constraint firstItem="rA2-rV-5gK" firstAttribute="centerY" secondItem="7Xx-4Y-jne" secondAttribute="centerY" id="TDW-Ff-yyQ"/>
+                            <constraint firstItem="49a-CF-Tz4" firstAttribute="top" secondItem="ETR-jd-3vx" secondAttribute="bottom" constant="16" id="TSZ-eB-Y53"/>
+                            <constraint firstItem="XCp-u8-quf" firstAttribute="leading" secondItem="Hoc-go-kfD" secondAttribute="leading" constant="16" id="UWz-Xk-oSo"/>
+                            <constraint firstItem="ETR-jd-3vx" firstAttribute="top" secondItem="Hoc-go-kfD" secondAttribute="top" constant="37" id="XZ5-Ed-1D2"/>
+                            <constraint firstItem="XCp-u8-quf" firstAttribute="top" secondItem="49a-CF-Tz4" secondAttribute="bottom" constant="15" id="aZ8-mU-L68"/>
+                            <constraint firstItem="XCp-u8-quf" firstAttribute="top" secondItem="vi4-Sk-nXv" secondAttribute="bottom" constant="15" id="jIn-6g-1Zb"/>
+                            <constraint firstItem="Hoc-go-kfD" firstAttribute="trailing" secondItem="XCp-u8-quf" secondAttribute="trailing" constant="16" id="lv2-St-LMd"/>
+                            <constraint firstItem="49a-CF-Tz4" firstAttribute="leading" secondItem="Hoc-go-kfD" secondAttribute="leading" constant="16" id="o9K-mm-P9v"/>
+                            <constraint firstItem="rA2-rV-5gK" firstAttribute="centerX" secondItem="7Xx-4Y-jne" secondAttribute="centerX" id="tNo-ee-QM0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eqs-Py-ETQ"/>
+                    <connections>
+                        <outlet property="activityInd" destination="49a-CF-Tz4" id="0yO-Bd-Y7m"/>
+                        <outlet property="emailLabel" destination="vi4-Sk-nXv" id="Pia-Fz-Mrb"/>
+                        <outlet property="id" destination="XCp-u8-quf" id="sWI-eN-3Oq"/>
+                        <outlet property="name" destination="ETR-jd-3vx" id="DuX-Pt-1a4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNO-ia-cWl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933.5877862595419" y="-518.30985915492965"/>
         </scene>
         <!--Componentes-->
         <scene sceneID="tne-QT-ifu">
@@ -1107,7 +1188,7 @@
                         <segue destination="bax-lv-t2E" kind="relationship" relationship="viewControllers" id="A9w-zI-DhJ"/>
                         <segue destination="mzf-Nc-HXp" kind="relationship" relationship="viewControllers" id="yOI-Uh-46g"/>
                         <segue destination="Rqr-vF-pBn" kind="relationship" relationship="viewControllers" id="ugL-Lx-Zkd"/>
-                        <segue destination="a3N-se-kc3" kind="relationship" relationship="viewControllers" id="4HZ-2N-QiQ"/>
+                        <segue destination="DgH-AP-4dR" kind="relationship" relationship="viewControllers" id="4HZ-2N-QiQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1y-py-IoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1227,6 +1308,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i3M-kE-GlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1811.4503816793892" y="1688.7323943661972"/>
+        </scene>
+        <!--Web AlamoFire-->
+        <scene sceneID="W91-2V-1zX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DgH-AP-4dR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web AlamoFire" image="cloud" catalog="system" id="Ktx-H2-Mtj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lTf-5s-6wV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a3N-se-kc3" kind="relationship" relationship="rootViewController" id="M77-kI-edM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKi-PF-sTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="-518.30985915492965"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
