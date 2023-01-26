@@ -1137,17 +1137,39 @@
             </objects>
             <point key="canvasLocation" x="1063.3587786259541" y="2422.535211267606"/>
         </scene>
-        <!--View Controller-->
+        <!--Test King Fisher View Controller-->
         <scene sceneID="4ht-qS-Xgx">
             <objects>
-                <viewController storyboardIdentifier="Yellow" id="gbB-t7-lwz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Yellow" id="gbB-t7-lwz" customClass="TestKingFisherViewController" customModule="CursoIos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bbg-zP-beJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-Nj-BZA">
+                                <rect key="frame" x="76" y="306" width="240" height="240"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="5Bv-gw-Twd">
+                                <rect key="frame" x="186" y="416" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ZaU-eU-Eph"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="5Bv-gw-Twd" firstAttribute="top" secondItem="ZaU-eU-Eph" secondAttribute="top" constant="357" id="3Ab-2X-nT2"/>
+                            <constraint firstItem="rRq-Nj-BZA" firstAttribute="top" secondItem="ZaU-eU-Eph" secondAttribute="top" constant="247" id="5l5-mX-MTU"/>
+                            <constraint firstItem="ZaU-eU-Eph" firstAttribute="trailing" secondItem="5Bv-gw-Twd" secondAttribute="trailing" constant="187" id="Mdr-xa-r2X"/>
+                            <constraint firstItem="5Bv-gw-Twd" firstAttribute="leading" secondItem="ZaU-eU-Eph" secondAttribute="leading" constant="186" id="cjV-Lz-Faf"/>
+                            <constraint firstItem="ZaU-eU-Eph" firstAttribute="trailing" secondItem="rRq-Nj-BZA" secondAttribute="trailing" constant="77" id="iLK-i8-d4Z"/>
+                            <constraint firstItem="rRq-Nj-BZA" firstAttribute="leading" secondItem="ZaU-eU-Eph" secondAttribute="leading" constant="76" id="oLL-4P-Khq"/>
+                            <constraint firstItem="ZaU-eU-Eph" firstAttribute="bottom" secondItem="rRq-Nj-BZA" secondAttribute="bottom" constant="272" id="p74-8g-A8b"/>
+                            <constraint firstItem="ZaU-eU-Eph" firstAttribute="bottom" secondItem="5Bv-gw-Twd" secondAttribute="bottom" constant="382" id="uqI-Zc-Pbv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wH5-Yb-whw"/>
+                    <connections>
+                        <outlet property="myActivity" destination="5Bv-gw-Twd" id="NvA-9g-kuq"/>
+                        <outlet property="myImage" destination="rRq-Nj-BZA" id="LV7-d3-Q9U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39p-CP-XEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

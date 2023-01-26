@@ -19,6 +19,8 @@
 		CE463B9E2981BEC300DEA207 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9D2981BEC300DEA207 /* Decoder.swift */; };
 		CE463BA02982C04900DEA207 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463B9F2982C04900DEA207 /* NewUser.swift */; };
 		CE463BA22982C18500DEA207 /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463BA12982C18500DEA207 /* NewUserViewController.swift */; };
+		CE463BA52982C68C00DEA207 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE463BA42982C68C00DEA207 /* Kingfisher */; };
+		CE463BA72982C6D500DEA207 /* TestKingFisherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE463BA62982C6D500DEA207 /* TestKingFisherViewController.swift */; };
 		CE65C8D22970470500A4AEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D12970470500A4AEF5 /* AppDelegate.swift */; };
 		CE65C8D42970470500A4AEF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */; };
 		CE65C8D62970470500A4AEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE65C8D52970470500A4AEF5 /* ViewController.swift */; };
@@ -55,6 +57,7 @@
 		CE463B9D2981BEC300DEA207 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
 		CE463B9F2982C04900DEA207 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 		CE463BA12982C18500DEA207 /* NewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		CE463BA62982C6D500DEA207 /* TestKingFisherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestKingFisherViewController.swift; sourceTree = "<group>"; };
 		CE65C8CE2970470500A4AEF5 /* CursoIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65C8D12970470500A4AEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE65C8D32970470500A4AEF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE463BA52982C68C00DEA207 /* Kingfisher in Frameworks */,
 				CE463B922981B94400DEA207 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,14 +111,15 @@
 			path = Seccion16;
 			sourceTree = "<group>";
 		};
-		CE463B6029817A0200DEA207 /* Seccion21 */ = {
+		CE463B6029817A0200DEA207 /* Seccion21y22 */ = {
 			isa = PBXGroup;
 			children = (
+				CE463BA12982C18500DEA207 /* NewUserViewController.swift */,
+				CE463BA62982C6D500DEA207 /* TestKingFisherViewController.swift */,
 				CE463B952981B9FD00DEA207 /* Network */,
 				CE463B9B2981BD2C00DEA207 /* HttpTestViewController.swift */,
-				CE463BA12982C18500DEA207 /* NewUserViewController.swift */,
 			);
-			path = Seccion21;
+			path = Seccion21y22;
 			sourceTree = "<group>";
 		};
 		CE463B952981B9FD00DEA207 /* Network */ = {
@@ -157,7 +162,7 @@
 		CE65C8D02970470500A4AEF5 /* CursoIos */ = {
 			isa = PBXGroup;
 			children = (
-				CE463B6029817A0200DEA207 /* Seccion21 */,
+				CE463B6029817A0200DEA207 /* Seccion21y22 */,
 				CE773EAE29807D6C005A7665 /* Seccion19 */,
 				CE773EA529800CBF005A7665 /* Seccion17 */,
 				CE269A5C297EAAFD00F16C1D /* Seccion16 */,
@@ -250,6 +255,7 @@
 			name = CursoIos;
 			packageProductDependencies = (
 				CE463B912981B94400DEA207 /* Alamofire */,
+				CE463BA42982C68C00DEA207 /* Kingfisher */,
 			);
 			productName = CursoIos;
 			productReference = CE65C8CE2970470500A4AEF5 /* CursoIos.app */;
@@ -281,6 +287,7 @@
 			mainGroup = CE65C8C52970470500A4AEF5;
 			packageReferences = (
 				CE463B902981B94400DEA207 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE463BA32982C68C00DEA207 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CE65C8CF2970470500A4AEF5 /* Products */;
 			projectDirPath = "";
@@ -335,6 +342,7 @@
 				CE773EA929800D60005A7665 /* AutomovilViewController.swift in Sources */,
 				CE773EAD298019F5005A7665 /* AutomovilElectrico.swift in Sources */,
 				CE463BA02982C04900DEA207 /* NewUser.swift in Sources */,
+				CE463BA72982C6D500DEA207 /* TestKingFisherViewController.swift in Sources */,
 				CE463B9A2981BA7000DEA207 /* User.swift in Sources */,
 				CE269A5E297EAB0E00F16C1D /* TablasViewController.swift in Sources */,
 				CE773EA729800CD5005A7665 /* Automovil.swift in Sources */,
@@ -566,6 +574,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		CE463BA32982C68C00DEA207 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -573,6 +589,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE463B902981B94400DEA207 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		CE463BA42982C68C00DEA207 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE463BA32982C68C00DEA207 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 

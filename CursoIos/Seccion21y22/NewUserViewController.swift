@@ -27,7 +27,7 @@ class NewUserViewController: UIViewController {
         
         self.activityInd.startAnimating()
         
-        let newUser = NewUser(name: "Nico Pepe", email: "nicoss@pepe.com", gender: "Male", status: "Active")
+        let newUser = NewUser(name: "Nicolas Pepe", email: "dsdasassadds@pepe.com", gender: "Male", status: "Active")
         
         NetworkingProvider.shared.addUser(user: newUser) { (user) in
                 
