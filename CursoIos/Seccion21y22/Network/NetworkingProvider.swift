@@ -43,6 +43,38 @@ final class NetworkingProvider {
                 failure(response.error)
             }
         }
+    }
+    
+    func updateUser(id: Int, user: NewUser, success: @escaping (_ user: User) -> (), failure: @escaping (_ error: Error?) -> ()) {
+        let url = "\(kBaseURL)users/\(id)"
+        
+        let headers: HTTPHeaders = [.authorization(bearerToken: kToken)]
+        
+        AF.request(url, method: .put, parameters: user, encoder: JSONParameterEncoder.default, headers: headers).validate(statusCode: kStatusOk).responseDecodable (of: User.self, decoder: Decoder()) {
+            response in
+            if let user = response.value {
+                print(user)
+                print(user.email)
+                success(user)
+            } else {
+                failure(response.error)
+            }
+        }
+    }
+    
+    func deleteUser(id: Int, success: @escaping () -> (), failure: @escaping (_ error: Error?) -> ()) {
+        let url = "\(kBaseURL)users/\(id)"
+        
+        let headers: HTTPHeaders = [.authorization(bearerToken: kToken)]
+        
+        AF.request(url, method: .delete, headers: headers).validate(statusCode: kStatusOk).response {
+            response in
+            if let error = response.error {
+                failure(error)
+            } else {
+                success()
+            }
+        }
         
     }
 }
