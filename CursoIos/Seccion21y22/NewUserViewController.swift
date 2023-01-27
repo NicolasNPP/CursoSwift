@@ -26,8 +26,8 @@ class NewUserViewController: UIViewController {
     @IBAction func addUserAction(_ sender: Any) {
         
         self.activityInd.startAnimating()
-        
-        let newUser = NewUser(name: "Nicolas Pepe", email: "dsdasassadds@pepe.com", gender: "Male", status: "Active")
+        var number = Int.random(in: 100..<200)
+        let newUser = NewUser(name: "Nicolas Pepe\(number)", email: "dsdas\(number)assadds@pepe.com", gender: "Male", status: "Active")
         
         NetworkingProvider.shared.addUser(user: newUser) { (user) in
                 
